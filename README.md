@@ -1,6 +1,6 @@
-# MP Extractor
+# mpExtractor
 
-"MP Extractor" es un conjunto de scripts, escritos en python, que permiten obtener las calificaciones de maestros del sitio web "MisProfesores.com" en un dataframe o archivo csv.
+"mpExtractor" es un conjunto de scripts, escritos en python, que permiten obtener las calificaciones de maestros del sitio web "MisProfesores.com" en un dataframe o archivo csv.
 
 ## Instalación
 
@@ -39,9 +39,7 @@ Este proyecto es un prototipo y podría contener errores. Además, también podr
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+to discuss what you would like to change. Please make sure to update tests as appropriate.
 
 ## Licencia
 
