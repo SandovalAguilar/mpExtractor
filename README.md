@@ -12,7 +12,7 @@ pip install BeautifulSoup
 pip install pandas 
 ```
 
-Si se desea exportar los resultados a un archivo PDF, es necesario instalar la siguiente librería.
+Si se desea exportar los resultados a un archivo PDF, es necesario instalar las siguientes librerías.
 
 ```bash
 pip install dataframe-image
@@ -21,18 +21,20 @@ pip install fpdf
 
 ## Uso
 
-```python
-import foobar
+Únicamente ejecutar el script "mp_extractor" e introducir una URL válida del sitio MisProfesores.com que corresponda a una facultad. Por ejemplo:
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
 ```
+https://www.misprofesores.com/escuelas/UANL-FCFM_2263
+```
+
+Posteriormente se desplegarán una serie de opciones como:
+
+- Generar un archivo CSV con todas las valoraciones.
+- Generar un reporte en PDF con el top de profesores con mejores y peores calificaciones.
+
+## Notas adicionales
+
+Este proyecto es un prototipo y podría contener errores. Además, también podría modificarse completamente en el futuro.
 
 ## Contributing
 
@@ -41,6 +43,6 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
+## Licencia
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/SandovalAguilar/mp_extractor/blob/main/LICENSE)
