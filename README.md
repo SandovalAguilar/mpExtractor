@@ -21,7 +21,7 @@ pip install fpdf
 
 ## Uso
 
-Únicamente ejecutar el script "mp_extractor" e introducir una URL válida del sitio MisProfesores.com que corresponda a una facultad. Por ejemplo:
+Únicamente ejecutar el script "mpExtractor" e introducir una URL válida del sitio MisProfesores.com que corresponda a una facultad. Por ejemplo:
 
 ```
 https://www.misprofesores.com/escuelas/UANL-FCFM_2263
