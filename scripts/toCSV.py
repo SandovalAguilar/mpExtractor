@@ -1,5 +1,5 @@
 '''
-file -- to_csv.py -- 
+file -- toCSV.py -- 
 '''
 
 # Librerias 
@@ -8,15 +8,15 @@ from datetime import date
 from pathlib import Path
 
 # Modulos
-import data_analyzer as da
-import html_to_dataframe as td
+import dataAnalyzer as da
+import htmlToDataFrame as td
 
-# Programa principal
-def to_csv(df, facultad):
+# Funcion principal
+def toCSV(df, facultad, tableType):
     
     script_path = str(Path( __file__ ).absolute())
     today_date = str(date.today())
-    df = df.to_csv( facultad + '_data_' + today_date + '.csv', index = False)
+    df = df.to_csv( facultad + '_' + tableType + '_' + today_date + '.csv', index = False)
 
     print("Archivo creado satisfactoriamente en la ruta " + script_path + " con la fecha: " + today_date)
 

@@ -1,5 +1,5 @@
 '''
-file -- to_pdf.py -- 
+file -- toPDF.py -- 
 '''
 
 # Librerias 
@@ -9,9 +9,9 @@ import dataframe_image as dfi
 from pathlib import Path
 
 # Modulos
-import html_to_dataframe as td
-import data_analyzer as da
-import to_csv as tc
+import htmlToDataFrame as td
+import dataAnalyzer as da
+import toCSV as tc
 
 # Clases
 class PDF(FPDF):
@@ -29,7 +29,7 @@ class PDF(FPDF):
         self.cell(0, 10, 'Pag.' + str(self.page_no()) + '/{nb}', 0, 0, 'C')
 
 # Programa principal
-def to_pdf(df):
+def toPDF(df):
 
     dfi.export(df.describe_data, 'describe_table.png', max_rows = 10)
     dfi.export(df.min_table, 'min_table.png', max_rows = 10)

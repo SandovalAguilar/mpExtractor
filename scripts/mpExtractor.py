@@ -1,16 +1,10 @@
 '''
-Proyecto Integrador de Aprendizaje
-
-Ismael Sandoval Aguilar - 2086210
-Alejandro Isaí Avila Avila - 1943548
-Raziel Alejandro Ibarra Lucio - 2086238
-Jesús Eduardo Brambila Duarte - 2086128
-Ian Joshua Montoya Torres - 2086239
-
-Programacion Orientada a Objetos - 031 - A2022
-Prof. Jose Luis Candelario Tovar
-
-27 de octubre de 2022
+ * "mpExtractor" es un conjunto de scripts, escritos en python, 
+ * que permiten obtener las calificaciones de maestros del sitio 
+ * web "MisProfesores.com" en un dataframe o archivo csv.
+ *
+ * Authors: Ismael Sandoval Aguilar, Edgar Iván Hinojosa Saldaña.
+ * Created:   27.10.2022
 '''
 
 # Librerias
@@ -20,13 +14,13 @@ import webbrowser
 # Clases
 
 # Modulos
-import html_to_dataframe as td
-import data_analyzer as da
-import to_csv as tc
-import to_pdf as tp
+import htmlToDataFrame as td
+import dataAnalyzer as da
+import toCSV as tc
+import toPDF as tp
 
 #Comprobacion de URL
-def validate_url():
+def validateURL():
 
     aux = True
 
@@ -36,13 +30,13 @@ def validate_url():
 
         input_url = input()
 
-        print('\n ===========[INGRESAR EL NOMBRE DE LA FACULTAD]=============')
+        print('\n ===========[INGRESAR EL ACRONIMO DE LA FACULTAD]=============')
         print('  --------------------------------------')
 
         input_facultad = input()
 
         try:
-            df = da.data_analyzer(input_url, input_facultad)
+            df = da.dataAnalyzer(input_url, input_facultad)
         except:
             print("URL NO VALIDA")
             continue
@@ -53,6 +47,11 @@ def validate_url():
 
 # Programa principal
 def main():
+
+    df = validateURL()
+
+
+
     return 0;
 
 if __name__ == "__main__":
