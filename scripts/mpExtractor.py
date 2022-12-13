@@ -9,7 +9,6 @@
 
 # Librerias
 import pandas as pd
-import webbrowser 
 import os 
 
 # Clases
@@ -50,6 +49,7 @@ def validateURL():
 
     return dataFrame
 
+# Despliega unicamente las opciones del menu
 def printMenu():
     os.system('cls||clear')
     print(30 * "-" , "MENU" , 30 * "-")
