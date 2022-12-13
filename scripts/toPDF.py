@@ -15,7 +15,6 @@ import toCSV as tc
 
 # Clases
 class PDF(FPDF):
-
     def header(self):
         self.image('fcfm.png', w = 15)
         self.set_font('Arial', 'B', 24)
@@ -30,10 +29,9 @@ class PDF(FPDF):
 
 # Programa principal
 def toPDF(df):
-
-    dfi.export(df.describe_data, 'describe_table.png', max_rows = 10)
-    dfi.export(df.min_table, 'min_table.png', max_rows = 10)
-    dfi.export(df.max_table, 'max_table.png', max_rows = 10)
+    dfi.export(df.describeData, 'describe_table.png', max_rows = 10)
+    dfi.export(df.minTable.head(10), 'min_table.png', max_rows = 10)
+    dfi.export(df.maxTable.head(10), 'max_table.png', max_rows = 10)
 
     pdf = PDF()
     pdf.add_page()

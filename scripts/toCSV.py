@@ -18,7 +18,7 @@ def toCSV(df, facultad, tableType):
     today_date = str(date.today())
     df = df.to_csv( facultad + '_' + tableType + '_' + today_date + '.csv', index = False)
 
-    print("Archivo creado satisfactoriamente en la ruta " + script_path + " con la fecha: " + today_date)
+    print("Archivo creado satisfactoriamente en la ruta " + script_path + " con la fecha: " + today_date, flush = True)
 
 # Este apartado solo debe utilizarse para realizar pruebas individuales del modulo
 '''
