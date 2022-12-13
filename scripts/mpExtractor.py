@@ -70,25 +70,25 @@ def menuSelector(dataFrame, schoolName):
 
         if choice == '1':     
             tc.toCSV(dataFrame.fullTable, schoolName, 'full_table')
-            input("Presione cualquier tecla para continuar...")
+            input("Presione enter para continuar...")
 
         if choice == '2':     
             tc.toCSV(dataFrame.maxTable, schoolName, 'max_table')
-            input("Presione cualquier tecla para continuar...")
+            input("Presione enter para continuar...")
 
         if choice == '3':     
             tc.toCSV(dataFrame.minTable, schoolName, 'min_table')
-            input("Presione cualquier tecla para continuar...")
+            input("Presione enter para continuar...")
 
         if choice == '4':     
             tp.toPDF(dataFrame)
-            input("Presione cualquier tecla para continuar...")
+            input("Presione enter para continuar...")
 
         elif choice == '5':
             loop = False
         
         else:
-            input("Opcion invalida. Presione cualquier tecla para continuar...")
+            input("Opcion invalida. Presione enter para continuar...")
 
 
 # Programa principal
