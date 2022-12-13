@@ -19,40 +19,39 @@ import dataAnalyzer as da
 import toCSV as tc
 import toPDF as tp
 
-#Comprobacion de URL
+# Comprobacion del nombre de la facultad
+def validateString(input_facultad):
+
+    while not(str.isalpha(input_facultad)):
+        print("NOMBRE NO VALIDO")
+        input_facultad = input()
+    
+    return input_facultad
+
+# Comprobacion de URL
 def validateURL():
 
-    aux = True
-
-    while aux == True:
+    while True:
         print('\n ===========[INGRESAR UNA URL VALIDA]=============')
         print('  --------------------------------------')
 
         input_url = input()
 
-        print('\n ===========[INGRESAR EL ACRONIMO DE LA FACULTAD]=============')
-        print('  --------------------------------------')
-
-        input_facultad = input()
-
         try:
-            df = da.dataAnalyzer(input_url, input_facultad)
+            df = td.htmlToDataFrame(input_url)
         except:
             print("URL NO VALIDA")
-            continue
-
-        aux = False
+        else:
+            break
 
     return df
 
 # Programa principal
 def main():
 
-    df = validateURL()
+    print(validateURL())
 
-
-
-    return 0;
+    return 0
 
 if __name__ == "__main__":
     main()
