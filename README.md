@@ -30,7 +30,12 @@ https://www.misprofesores.com/escuelas/UANL-FCFM_2263
 Posteriormente se desplegarán una serie de opciones como:
 
 - Generar un archivo CSV con todas las valoraciones.
-- Generar un reporte en PDF con el top de profesores con mejores y peores calificaciones.
+- Generar un archivo CSV con todas las valoraciones más altas.
+- Generar un archivo CSV con todas las valoraciones más bajas.
+- Generar un reporte en PDF con el top de profesores con mejores y peores valoraciones.
+
+Además, el orden toma en cuenta el número de reseñas de cada maestro: es decir, tiene más peso un maestro con 9 de calificación pero (por ejemplo)
+20 reseñas, que uno con la misma calificación pero 5 reseñas.
 
 ## Notas adicionales
 
