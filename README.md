@@ -36,8 +36,7 @@ Posteriormente se desplegarán una serie de opciones como:
 - Generar un archivo CSV con todas las valoraciones más bajas.
 - Generar un reporte en PDF con el top de profesores con mejores y peores valoraciones.
 
-El orden toma en cuenta el número de reseñas de cada maestro: es decir, tiene más peso un maestro con 9 de calificación pero (por ejemplo)
-20 reseñas, que uno con la misma calificación pero solo con 5 reseñas. Además, tambien se encuentra en una de las carpetas una Jupyter Notebook, por si se desea experimentar directamente con el datset. 
+El orden toma en cuenta el número de reseñas de cada maestro: es decir, tiene más peso un maestro con 9 de calificación pero (por ejemplo) 20 reseñas, que uno con la misma calificación pero solo con 5 reseñas. Además, tambien se encuentra en una de las carpetas una Jupyter Notebook, por si se desea experimentar directamente con el dataset. 
 
 ## Notas adicionales
 
