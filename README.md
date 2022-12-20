@@ -4,7 +4,7 @@
 
 ## Instalación
 
-Para utilizar los scripts "html_to_dataframe.py" y "data_analyzer" es necesario instalar las siguientes librerías a traves del gestor de paquetes [pip](https://pip.pypa.io/en/stable/).
+Para utilizar los scripts "htmlToDataframe.py" y "dataAnalyzer" es necesario instalar las siguientes librerías a traves del gestor de paquetes [pip](https://pip.pypa.io/en/stable/).
 
 ```bash
 pip install requests 
