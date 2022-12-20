@@ -8,7 +8,7 @@ Para utilizar los scripts "html_to_dataframe.py" y "data_analyzer" es necesario 
 
 ```bash
 pip install requests 
-pip install BeautifulSoup
+pip install beautifulsoup4
 pip install pandas 
 ```
 
